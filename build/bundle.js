@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function test() {\n  console.log(\"teste\");\n}\n\ntest();\n\n//# sourceURL=webpack://5-build-bundle-transpiracao-babel-linter-eslint/./src/index.js?");
+eval("function test() {\n  console.log(\"teste\");\n}\n\ntest();\n\nvar meuTeste = function meuTeste() {\n  console.log(\"meu teste\");\n};\n\n//# sourceURL=webpack://5-build-bundle-transpiracao-babel-linter-eslint/./src/index.js?");
 
 /***/ })
 

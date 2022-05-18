@@ -1,0 +1,98 @@
+# Sites
+
+## caniuse.com
+
+## babeljs.io 
+ - Transforma o código para leitura de outros navegadores
+
+#### site utilizado para saber quais funções os navegadores funcionam
+___
+
+CLI - command 
+___
+
+
+## Minificação 
+- comando: npm run build (para minificar)
+#### Minificação é o processo de remoção de todos os caracteres desnecessários de código-fonte na linguam de programação sem alterar suas funcionalidades
+
+___
+
+## Babel
+Babel é um compilador, depois traduz para outras versões, fazendo a conversão  de códigos e funcionalidades mais modernas, para versões mais antigas. Resumidamente, ele adpta o código JS para podermos utilizar em mais navegadores.
+* PARSE
+ -- Estrutura AST, onde todos os elementos JS são mapeados
+* TRANSFORMER
+ -- Pega a AST e substitui os "nós" modernos para "nós" antigos
+* GENERATOR
+ -- Transforma o código AST (transfoter) em um novo código Javascript, já com a sintaxe convertida para a linguagem antiga, portando compatível com outro navegadores.
+ 
+ ## WEBPACK
+ 
+ O Webpack é um module bundler, ou seja, um empacotador de módulos. O empacotador é quem gera o nosso Bundle.
+ 
+ Utilizar um empacotador é importante quando nós trabalhamos com aplicacções modulares, ou seja dividimos nossa aplicação em pequenas partes.
+
+Partindo de um ponto incial (entrada) o webpack vai mapeando todos os módulos importados, depois ele vai para os sub módulos e continua importando os módulos e continua importando os módulos destes, e assim sucessivamente, até que todos os módulos esteja mapeados. Quando se faz necessário carrega esse módulo.
+ 
+---
+ # Pilares do *WEBPACK*
+ 
+ ## Pilares PARTE I
+ * Entry (entrada)
+  -- Indica qual o primeiro módulo d árvore, por padrão é arquivo *index.js*.
+  
+  * Output (saída)
+  -- Diz qual pasta serão armazenadas os arquivos de bundle, por padrão é *.dist/moin.js*
+  
+  ___
+  
+  ## Pilares PARTE II 
+  * Loaders
+  -- O webpack só entende .js e .json, para interpetrar outros formatos de arquivos, devemos adicionar essa configuração nos loaders, citando o formato do arquivo e o loader responsável por ele, por ex:
+  
+  módule: {
+      rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+  }
+  
+  #### TUDO ISSO JÁ É REALIZADO DE FORMA AUTOMÁTICA PELO REACT
+  
+  ___
+
+## Pilares PARTE III
+
+* Plugins
+ -- Enquanto os loaders são usados para transformar certos tipos de módulos, os plug-ing podem ser aproveitados para realizar uma ampla gama de tarefas, como otimização de pacote, gerenciamento de ativos e injeção de variáveis.
+ 
+ ___
+ 
+ ## Pilares PARTE IIII
+ 
+ * Mode
+  -- Habilita se a confiuração é para ambiente de produção ou desenvolvimento.
+  -- O Webpack é compatível com todos os navagdores que são compatíveis com o ES5.
+ 
+ ___
+ 
+# LINTERS
+
+### Linters Javascript são ferramentas que ajudam você a depurar o seu código.
+
+Como o JS é uma linguagem compilada em tempo de execução, nós não conseguimos achar o problemas tão facilmente, porque só são apresentados quando o programa já está rodando.
+
+## Como funcionam os Linters?
+
+Os Linters "observam" o seu código durante o desenvolvimento e te apontam erros, bugs e até mesmo má organização de código. 
+Geralmente essas ferramentas são muito configuráveis, ou seja, você diz a elas o que você quer que elas observem durante o seu desenvolvimento, assim você pode colocar a sua "cara" no projeto.
+
+### As ferramentas mais conhecidas são:
+* ESLint (vou aprender com essa)
+ -- Comando para instalar: npx eslint --save--dev
+-- Comando para configuração inicial do ESLint: npx eslint --init
+* JSLint 
+* JSHint
+
+
+
+
+
